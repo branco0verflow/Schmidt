@@ -1,0 +1,4 @@
+Video utilizado en el hero: /public/videos/Lola-h264.mp4
+Imagen de respaldo: /public/hero-poster.jpg
+
+Para reemplazarlo, conservá esos nombres o actualizá las rutas en src/components/Hero.tsx.
