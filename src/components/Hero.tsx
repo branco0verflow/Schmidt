@@ -20,7 +20,7 @@ export default function Hero() {
       tl.from(".hero-eyebrow", { y: 18, opacity: 0, duration: 0.55 })
         .from(".hero-title", { y: 28, opacity: 0, duration: 0.75 }, "-=0.25")
         .from(".hero-copy", { y: 20, opacity: 0, duration: 0.6 }, "-=0.4")
-        .from(".hero-btn", { y: 20, opacity: 0, duration: 0.55, stagger: 0.1 }, "-=0.35");
+        .from(".hero-btn", { y: 20, opacity: 3, duration: 0.55, stagger: 0.1 }, "-=0.35");
     },
     { scope: heroRef }
   );
@@ -28,7 +28,7 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="relative grid min-h-125 w-full place-items-center overflow-hidden py-20 sm:min-h-145"
+      className="relative grid min-h-[50vh] w-full place-items-center overflow-hidden bg-blue-950 py-14"
     >
       <video
         className="absolute inset-0 h-full w-full bg-blue-950 object-cover"
@@ -41,13 +41,11 @@ export default function Hero() {
         <source src="/videos/Lola-h264.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,22,52,.86)_0%,rgba(5,61,132,.68)_48%,rgba(3,24,52,.42)_100%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,.08)_0%,rgba(0,0,0,.2)_100%)]" />
-
+      
       <div className="container relative z-2">
         <div className="max-w-190 text-left">
           <span className="hero-eyebrow inline-flex items-center rounded-full border border-white/25 bg-white/10 px-4 py-2 text-[0.72rem] font-semibold tracking-[0.2em] text-white uppercase backdrop-blur">
-            Schmidt Motos · Colonia
+            Ap. Saravia 754, Colonia
           </span>
           <Image
             src="/logoo.png"
@@ -55,7 +53,7 @@ export default function Hero() {
             width={1767}
             height={890}
             priority
-            className="hero-title mt-5 h-auto w-full max-w-110 sm:max-w-140 lg:max-w-165"
+            className="hero-title mt-5 h-auto w-full max-w-55 sm:max-w-70 lg:max-w-82"
           />
           <p className="hero-copy mt-5 max-w-150 text-[1rem] leading-relaxed text-white/82 sm:text-[1.15rem]">
             Motos, equipamiento, lubricantes Motul y la colección Fox Racing en un solo lugar.

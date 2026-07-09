@@ -36,9 +36,9 @@ export default function BrandHighlights() {
       >
         <div className="container">
           <div className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_28px_90px_rgba(16,35,62,0.10)] lg:grid-cols-[0.92fr_1.08fr]">
-            <div className="relative min-h-90 overflow-hidden">
+            <div className="relative min-h-80 overflow-hidden bg-red-800">
               <Image
-                src="/motul.png"
+                src="/landin/lola.png"
                 alt="Motul, lubricantes para motos y autos"
                 fill
                 className="object-cover"
@@ -140,7 +140,7 @@ export default function BrandHighlights() {
               {/* Imagen Fox */}
               <div className="relative min-h-80 overflow-hidden sm:min-h-110 lg:min-h-0">
                 <Image
-                  src="/fox.png"
+                  src="/landin/fox11.png"
                   alt="Colección de indumentaria Fox Racing disponible en Schmidt Motos"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-[1.03]"
